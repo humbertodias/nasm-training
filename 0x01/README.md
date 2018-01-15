@@ -1,7 +1,16 @@
 # Compile and Link
 
+For Linux
+
 ```
-make all
+make lin32
+```
+
+
+For Mac
+
+```
+make mac64
 ```
 
 # Comparing Results of asm32 x asm64 x c

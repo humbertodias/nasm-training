@@ -1,27 +1,32 @@
-CFLAGS=-O0 -g 
+CFLAGS=-O0 -g
 
-all: nasm gcc
+nasm: lin32 lin64
 
-nasm: nasm32 nasm64
+x64: lin64
 
-gcc: gcc32 gcc64
+x32: lin32
 
-x64: nasm64 gcc64
 
-x32: nasm32 gcc32
-
-nasm64:
-	nasm -f elf64 arithmetic64.asm -o arithmetic64.o
-
-nasm32:
+lin32:
 	nasm -f elf32 arithmetic32.asm -o arithmetic32.o
-
-gcc32:
 	gcc $(CFLAGS) -m32 generator.c -o generator
 	gcc $(CFLAGS) -m32 arithmetic_asm.c arithmetic32.o -o arithmetic_asm32
 	gcc $(CFLAGS) -m32 arithmetic_c.c -o arithmetic_c
 
-gcc64:
+lin64:
+	nasm -f elf64 arithmetic64.asm -o arithmetic64.o
+	gcc $(CFLAGS) -m64 generator.c -o generator
+	gcc $(CFLAGS) -m64 arithmetic_asm.c arithmetic64.o -o arithmetic_asm64
+	gcc $(CFLAGS) -m64 arithmetic_c.c -o arithmetic_c
+
+mac64:
+	nasm -f macho64 arithmetic64.asm -o arithmetic64.o
+	gcc $(CFLAGS) -m64 generator.c -o generator
+	gcc $(CFLAGS) -m64 arithmetic_asm.c arithmetic64.o -o arithmetic_asm64
+	gcc $(CFLAGS) -m64 arithmetic_c.c -o arithmetic_c
+
+mac32:
+	nasm -f macho32 arithmetic64.asm -o arithmetic64.o
 	gcc $(CFLAGS) -m64 generator.c -o generator
 	gcc $(CFLAGS) -m64 arithmetic_asm.c arithmetic64.o -o arithmetic_asm64
 	gcc $(CFLAGS) -m64 arithmetic_c.c -o arithmetic_c

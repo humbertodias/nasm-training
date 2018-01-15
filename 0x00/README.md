@@ -1,11 +1,23 @@
 # Compile
 
+For Linux
+
 ```
-make nasm32
+make lin32
 ```
 
 ```
-make nasm64
+make lin64
+```
+
+For Mac
+
+```
+make mac32
+```
+
+```
+make mac64
 ```
 
 # Run
