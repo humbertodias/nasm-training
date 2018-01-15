@@ -8,17 +8,16 @@ In this training we are going to use (NASM) that is an assembler and disassemble
 
 ## Training
 
-* [0x0 - Hello World](0x0/)
+* [0x0 - Hello World](./0x0/)
 
-* [0x1 - Arithmetic ](0x1/)
-
+* [0x1 - Arithmetic ](./0x1/)
 
 
 
 ## References
 
-* [http://www.nasm.us](http://www.nasm.us)
+* [NASM](http://www.nasm.us)
 
-* [Assembly-language-programmingunit](https://www.slideshare.net/infinite2me/assembly-language-programmingunit-4)
+* [Assembly Programming Unit](https://www.slideshare.net/infinite2me/assembly-language-programmingunit-4)
 
 * [NASM Tutorial](http://cs.lmu.edu/~ray/notes/nasmtutorial)
