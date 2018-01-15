@@ -8,9 +8,9 @@ In this training we are going to use (NASM) that is an assembler and disassemble
 
 ## Training
 
-* [0x0 - Hello World](<a href="0x0/">0x0</a>)
+* [0x0 - Hello World](tree/master/0x00)
 
-* [0x1 - Arithmetic ](<a href="0x1/">0x0</a>)
+* [0x1 - Arithmetic ](tree/master/0x01)
 
 
 
