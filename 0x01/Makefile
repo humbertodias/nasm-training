@@ -1,4 +1,4 @@
-CFLAGS=-O0 -g
+CFLAGS=-O0 -g -Wall
 
 nasm: lin32 lin64
 
@@ -44,4 +44,4 @@ compare: geninput
 	time ./arithmetic_c < input.txt > output_c.txt
 
 clean:
-	rm -f arithmetic*.o objdump_* output_* arithmetic_c arithmetic_asm32 arithmetic_asm64 generator
+	rm -f arithmetic*.o objdump_* input.txt output_* arithmetic_c arithmetic_asm32 arithmetic_asm64 generator
