@@ -44,3 +44,7 @@ Install cygwin and the packages: make, nasm, gcc, gcc-dev
 * [Assembly Programming Unit](https://www.slideshare.net/infinite2me/assembly-language-programmingunit-4)
 
 * [NASM Tutorial](http://cs.lmu.edu/~ray/notes/nasmtutorial)
+
+* [x86 Assembly Guide](http://flint.cs.yale.edu/cs421/papers/x86-asm/asm.html)
+
+
