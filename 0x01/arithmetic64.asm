@@ -1,7 +1,7 @@
 section	.text
-	global sum, subtract, multiply, division, divmod
+	global _sum, _subtract, _multiply, _division, _divmod
 
-sum:
+_sum:
 
 	push       rbp        ; Save address of previous stack frame
 	
@@ -15,7 +15,7 @@ sum:
 	ret
 
 
-subtract:
+_subtract:
 
 	push       rbp        ; Save address of previous stack frame
 
@@ -28,7 +28,7 @@ subtract:
 	pop        rbp
 	ret
 
-multiply:
+_multiply:
 
 	push       rbp        ; Save address of previous stack frame
 
@@ -41,7 +41,7 @@ multiply:
 	pop        rbp
 	ret
 
-division:
+_division:
 
 	push       rbp        ; Save address of previous stack frame
 
@@ -55,11 +55,11 @@ division:
 	pop        rbp
 	ret
 
-divmod:
+_divmod:
 
 	push       rbp        ; Save address of previous stack frame
 
-	call division
+	call _division
 
 	mov 	   rax, rdx
 

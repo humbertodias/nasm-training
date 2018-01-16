@@ -1,7 +1,7 @@
 section	.text
-	global sum, subtract, multiply, division, divmod
+	global _sum, _subtract, _multiply, _division, _divmod
 
-sum:
+_sum:
 
 	push       ebp       ; Save address of previous stack frame
 	mov    ebp,esp
@@ -15,7 +15,7 @@ sum:
 	ret
 
 
-subtract:
+_subtract:
 
 	push       ebp       ; Save address of previous stack frame
 	mov    ebp,esp
@@ -29,7 +29,7 @@ subtract:
 	pop        ebp
 	ret
 
-multiply:
+_multiply:
 
 	push       ebp       ; Save address of previous stack frame
 	mov    ebp,esp
@@ -43,7 +43,7 @@ multiply:
 	pop        ebp
 	ret
 
-division:
+_division:
 
 	push       ebp       ; Save address of previous stack frame
 	mov    ebp,esp
@@ -58,7 +58,7 @@ division:
 	pop        ebp
 	ret
 
-divmod:
+_divmod:
 
 	push       ebp        ; Save address of previous stack frame
 	mov    ebp,esp

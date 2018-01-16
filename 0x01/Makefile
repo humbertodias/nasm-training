@@ -6,7 +6,6 @@ x64: lin64
 
 x32: lin32
 
-
 lin32:
 	nasm -f elf32 arithmetic32.asm -o arithmetic32.o
 	gcc $(CFLAGS) -m32 generator.c -o generator
@@ -26,10 +25,10 @@ mac64:
 	gcc $(CFLAGS) -m64 arithmetic_c.c -o arithmetic_c
 
 mac32:
-	nasm -f macho32 arithmetic64.asm -o arithmetic64.o
-	gcc $(CFLAGS) -m64 generator.c -o generator
-	gcc $(CFLAGS) -m64 arithmetic_asm.c arithmetic64.o -o arithmetic_asm64
-	gcc $(CFLAGS) -m64 arithmetic_c.c -o arithmetic_c
+	nasm -f macho32 arithmetic32.asm -o arithmetic32.o
+	gcc $(CFLAGS) -m32 generator.c -o generator
+	gcc $(CFLAGS) -m32 arithmetic_asm.c arithmetic32.o -o arithmetic_asm32
+	gcc $(CFLAGS) -m32 arithmetic_c.c -o arithmetic_c
 
 objdump:
 	objdump -M intel -d arithmetic_asm32 > objdump_asm32
