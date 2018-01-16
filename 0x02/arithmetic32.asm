@@ -3,7 +3,7 @@ section	.text
 
 _sum:
 
-	push       ebp       ; Save address of previous stack frame
+	push   ebp           ; Save address of previous stack frame
 	mov    ebp,esp
 
 	mov    eax, [ebp+8]  ; 1st parameter to eax
@@ -14,10 +14,9 @@ _sum:
 	pop        ebp
 	ret
 
-
 _subtract:
 
-	push       ebp       ; Save address of previous stack frame
+	push   ebp           ; Save address of previous stack frame
 	mov    ebp,esp
 
 	mov    eax, [ebp+8]  ; 1st parameter to eax
@@ -31,7 +30,7 @@ _subtract:
 
 _multiply:
 
-	push       ebp       ; Save address of previous stack frame
+	push   ebp           ; Save address of previous stack frame
 	mov    ebp,esp
 
 	mov    eax, [ebp+8]  ; 1st parameter to eax
@@ -40,12 +39,12 @@ _multiply:
 	mul    edx           ; eax = eax * edx
 
 	; epilog. restore stack pointer
-	pop        ebp
+	pop    ebp
 	ret
 
 _division:
 
-	push       ebp       ; Save address of previous stack frame
+	push   ebp           ; Save address of previous stack frame
 	mov    ebp,esp
 
 	mov    eax, [ebp+8]  ; 1st parameter to eax as dividend
@@ -60,7 +59,7 @@ _division:
 
 _divmod:
 
-	push       ebp        ; Save address of previous stack frame
+	push   ebp            ; Save address of previous stack frame
 	mov    ebp,esp
 
 	mov    eax, [ebp+8]   ; 1st parameter to eax as dividend

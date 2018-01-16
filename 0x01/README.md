@@ -7,29 +7,29 @@ make lin32
 ```
 
 
-For Mac
+# Bytes
 
 ```
-make mac64
-```
-
-# Comparing Results of asm32 x asm64 x c
-
-```
-make compare
+./bytes
 ```
 
 
-# ObjDump
-
-Linux
+# If Statement
 
 ```
-make lindump
+./cmd
 ```
 
-Mac
+
+# Local Variables
 
 ```
-make macdump
+./localvar
+```
+
+
+# Command Line Arguments
+
+```
+./args
 ```
