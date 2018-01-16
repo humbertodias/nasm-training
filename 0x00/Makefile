@@ -14,5 +14,9 @@ mac64:
 	nasm -f macho64 hello64mac.asm 
 	ld -e _start -macosx_version_min 10.13.2 -lSystem hello64mac.o -o hello64
 
+win32:
+	nasm -f win32 hello32win.asm -o hello32.exe
+#	ld -m i386pe hello32.o -o hello32.exe
+
 clean:
 	rm -f *.o hello32 hello64
