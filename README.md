@@ -23,6 +23,9 @@ Install cygwin and the packages: make, nasm, gcc, gcc-dev
 
 ![](doc/registers.png)
 
+![](doc/bytes.png)
+
+![](doc/stack.png)
 
 
 ## Training
