@@ -34,7 +34,7 @@ Install cygwin and the packages: make, nasm, gcc, gcc-dev
 
 * [0x1 - Arithmetic ](../../tree/master/0x01)
 
-* [0x2 - Arithmetic ](../../tree/master/0x02)
+* [0x2 - Args,LocalVar,etc ](../../tree/master/0x02)
 
 
 ## References
