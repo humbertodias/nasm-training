@@ -22,6 +22,14 @@ make compare
 
 # ObjDump
 
+Linux
+
 ```
-make objdump
+make lindump
+```
+
+Mac
+
+```
+make macdump
 ```

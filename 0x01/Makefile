@@ -30,10 +30,15 @@ mac32:
 	gcc $(CFLAGS) -m32 arithmetic_asm.c arithmetic32.o -o arithmetic_asm32
 	gcc $(CFLAGS) -m32 arithmetic_c.c -o arithmetic_c
 
-objdump:
+lindump:
 	objdump -M intel -d arithmetic_asm32 > objdump_asm32
 	objdump -M intel -d arithmetic_asm64 > objdump_asm64
 	objdump -M intel -d arithmetic_c > objdump_c
+
+macdump:
+	objdump -x86-asm-syntax=intel -D arithmetic_asm32 > objdump_asm32
+	objdump -x86-asm-syntax=intel -D arithmetic_asm64 > objdump_asm64
+	objdump --x86-asm-syntax=intel -D arithmetic_c > objdump_c
 
 geninput:
 	./generator 9999999 > input.txt
