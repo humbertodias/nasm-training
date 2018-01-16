@@ -7,7 +7,7 @@ In this training we are going to use (NASM) that is an assembler and disassemble
 * For Mac
 
 ```
-brew install make nasm gcc
+brew install binutils make nasm gcc
 ```
 * For Linux
 
