@@ -20,6 +20,12 @@ make mac32
 make mac64
 ```
 
+For Windows
+
+```
+make win32
+```
+
 # Run
 
 ```
