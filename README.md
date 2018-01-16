@@ -2,9 +2,28 @@
 
 In this training we are going to use (NASM) that is an assembler and disassembler for the Intel x86 architecture. It can be used to write 16-bit, 32-bit (IA-32) and 64-bit (x86-64) programs.
 
+# Prerequirements
+
+* For Mac
+
+```
+brew install make nasm gcc
+```
+* For Linux
+
+```
+apt install make nasm gcc
+```
+* For Windows
+
+Install cygwin and the packages: make, nasm, gcc, gcc-dev
+
+
 # Intro
 
 ![](doc/registers.png)
+
+
 
 ## Training
 
