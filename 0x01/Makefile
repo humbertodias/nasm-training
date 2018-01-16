@@ -44,4 +44,4 @@ compare: geninput
 	time ./arithmetic_c < input.txt > output_c.txt
 
 clean:
-	rm -f arithmetic*.o objdump_* input.txt output_* arithmetic_c arithmetic_asm32 arithmetic_asm64 generator
+	rm -rf arithmetic*.o objdump_* input.txt output_* *.dSYM arithmetic_c arithmetic_asm32 arithmetic_asm64 generator

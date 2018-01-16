@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-extern int _sum(int, int);
-extern int _subtract(int, int);
-extern int _multiply(int, int);
-extern int _division(int, int);
-extern int _divmod(int, int);
+extern int sum (int, int) asm ("_sum");
+extern int subtract(int, int) asm ("_subtract");
+extern int multiply(int, int) asm ("_multiply");
+extern int division(int, int) asm ("_division");
+extern int divmod(int, int) asm ("_divmod");
 
 int main(int argc, char ** argv)
 {
@@ -13,11 +13,11 @@ int main(int argc, char ** argv)
   char op;
   while (scanf("%d %c %d", &n1, &op, &n2) == 3) {
     switch (op) {
-    case '+': ret = _sum(n1, n2);      break;
-    case '-': ret = _subtract(n1, n2); break;
-    case 'x': ret = _multiply(n1, n2); break;
-    case '/': ret = _division(n1, n2); break;
-    case '%': ret = _divmod(n1, n2);   break;
+    case '+': ret = sum(n1, n2);      break;
+    case '-': ret = subtract(n1, n2); break;
+    case 'x': ret = multiply(n1, n2); break;
+    case '/': ret = division(n1, n2); break;
+    case '%': ret = divmod(n1, n2);   break;
     default: {printf("Invalid operator [%c]! Should be +, -, x,  / or %%\n", op); exit(2); }
     }
     printf("%d %c %d = %d\n", n1, op, n2, ret);
