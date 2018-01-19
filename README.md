@@ -18,6 +18,10 @@ apt install make nasm gcc
 
 Install cygwin and the packages: make, nasm, gcc, gcc-dev
 
+IDE
+
+[SASM](http://dman95.github.io/SASM) (Simple crossplatform IDE for NASM, MASM, GAS, FASM assembly)
+
 
 # Intro
 

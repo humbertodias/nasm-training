@@ -9,13 +9,17 @@ j: dw 'A'
 k: dd 99
 
 
-; DB - Define Byte. 8 bits
-; DW - Define Word. Generally 2 bytes on a typical x86 32-bit system
-; DD - Define double word. Generally 4 bytes on a typical x86 32-bit system
-; DQ
-; DT
+; DB - Define Byte. (8 bits = 1 Bytes)
+; DW - Define Word. (2 bytes) Generally 2 bytes on a typical x86 32-bit system
+; DD - Define double word. (4 Bytes) Generally 4 bytes on a typical x86 32-bit system
+; DQ - Double Quad Word. (8 bytes)
+; DT - 
 ; DDQ
 ; DO
+
+; 0 Terminator = \0
+; 10 New Line = \n
+; 13 Carriage return = \r
 
 extern printf
 
